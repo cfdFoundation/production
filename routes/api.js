@@ -10,11 +10,11 @@ async function teardown() {
 	return
 }
 
-async function getList(req, data) {
-	const queryR = "SELECT * FROM employees";
+async function getAdvisorList(req, data) {
+	const queryR = "SELECT * FROM advisors";
 	console.log(`Executing PG query :: ${queryR}`);
 	
-	const results = await dbObj.queryReturn(queryR,"employees_select");
+	const results = await dbObj.queryReturn(queryR,"advisors_select");
 	
 	console.log(results);
 	return results;
@@ -23,5 +23,5 @@ async function getList(req, data) {
 module.exports = {
 	init,
     teardown,
-    getList,
+    getAdvisorList,
 };

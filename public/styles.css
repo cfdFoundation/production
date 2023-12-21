@@ -1,8 +1,9 @@
 body {
   padding: 12px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   column-gap: 24px;
+  justify-content: space-between;
 }
 
 .card {
@@ -20,6 +21,19 @@ body {
   padding: 0 12px;
 }
 
+.template {
+  padding-top: 12px;
+}
+
 img {
   border-radius: 5px 5px 0 0;
+}
+
+p {
+  font-size: 12px;
+}
+
+h4 {
+  font-family: 'canela_regular_trialregular'; 
+  font-size: 20px;
 }

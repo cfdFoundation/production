@@ -12,7 +12,7 @@ async function teardown() {
 
 async function setCacheTimeout(req, data) {
 	const queryR = "SELECT * FROM employees";
-	console.log(`Executing PG query :-: ${queryR}`);
+	console.log(`Executing PG query :: ${queryR}`);
 	
 	const results = await dbObj.queryReturn(queryR,"employees_select");
 	
