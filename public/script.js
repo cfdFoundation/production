@@ -16,4 +16,4 @@ fetch("/routers/api/getAdvisorList")
       // Append the card as a child with the employee data to the <body> element on our page
       document.body.appendChild(card);
     });
-  }); // v1.0.1
+  }); // v1.0.2

@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-ThinItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-ThinItalic-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	}
+
+.CanelaCondensed-ThinItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 100;
+	font-style: italic;
+	}

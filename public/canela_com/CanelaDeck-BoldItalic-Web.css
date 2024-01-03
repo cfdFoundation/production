@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-BoldItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-BoldItalic-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	}
+
+.CanelaDeck-BoldItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 700;
+	font-style: italic;
+	}

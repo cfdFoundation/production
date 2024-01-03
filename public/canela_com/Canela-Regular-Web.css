@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Regular-Web.woff2') format('woff2'),
+		 url('Canela-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	}
+
+.Canela-Regular-Web {
+	font-family: 'Canela Web';
+	font-weight: 400;
+	font-style: normal;
+	}

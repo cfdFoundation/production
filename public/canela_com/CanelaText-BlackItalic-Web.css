@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-BlackItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-BlackItalic-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	}
+
+.CanelaText-BlackItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 900;
+	font-style: italic;
+	}

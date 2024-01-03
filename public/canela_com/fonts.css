@@ -1,0 +1,662 @@
+/*
+        This font software is the property of Commercial Type.
+
+        You may not modify the font software, use it on another website, or install it on a computer.
+
+        License information is available at http://commercialtype.com/eula
+        For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+        Copyright (C) 2024 Schwartzco Inc.
+        License 2401-FPAWZV      
+*/
+
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-ThinItalic-Web.woff2') format('woff2'),
+		 url('Canela-ThinItalic-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	}
+
+.Canela-ThinItalic-Web {
+	font-family: 'Canela Web';
+	font-weight: 100;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Medium-Web.woff2') format('woff2'),
+		 url('Canela-Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	}
+
+.Canela-Medium-Web {
+	font-family: 'Canela Web';
+	font-weight: 500;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-MediumItalic-Web.woff2') format('woff2'),
+		 url('Canela-MediumItalic-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	}
+
+.Canela-MediumItalic-Web {
+	font-family: 'Canela Web';
+	font-weight: 500;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Black-Web.woff2') format('woff2'),
+		 url('Canela-Black-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	}
+
+.Canela-Black-Web {
+	font-family: 'Canela Web';
+	font-weight: 900;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-RegularItalic-Web.woff2') format('woff2'),
+		 url('Canela-RegularItalic-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+.Canela-RegularItalic-Web {
+	font-family: 'Canela Web';
+	font-weight: 400;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Light-Web.woff2') format('woff2'),
+		 url('Canela-Light-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	}
+
+.Canela-Light-Web {
+	font-family: 'Canela Web';
+	font-weight: 300;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Thin-Web.woff2') format('woff2'),
+		 url('Canela-Thin-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	}
+
+.Canela-Thin-Web {
+	font-family: 'Canela Web';
+	font-weight: 100;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-LightItalic-Web.woff2') format('woff2'),
+		 url('Canela-LightItalic-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	}
+
+.Canela-LightItalic-Web {
+	font-family: 'Canela Web';
+	font-weight: 300;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Regular-Web.woff2') format('woff2'),
+		 url('Canela-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	}
+
+.Canela-Regular-Web {
+	font-family: 'Canela Web';
+	font-weight: 400;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-BlackItalic-Web.woff2') format('woff2'),
+		 url('Canela-BlackItalic-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	}
+
+.Canela-BlackItalic-Web {
+	font-family: 'Canela Web';
+	font-weight: 900;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-Bold-Web.woff2') format('woff2'),
+		 url('Canela-Bold-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	}
+
+.Canela-Bold-Web {
+	font-family: 'Canela Web';
+	font-weight: 700;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Web';
+	src: url('Canela-BoldItalic-Web.woff2') format('woff2'),
+		 url('Canela-BoldItalic-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	}
+
+.Canela-BoldItalic-Web {
+	font-family: 'Canela Web';
+	font-weight: 700;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-Black-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-Black-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	}
+
+.CanelaCondensed-Black-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 900;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-BoldItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-BoldItalic-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	}
+
+.CanelaCondensed-BoldItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 700;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-Light-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-Light-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	}
+
+.CanelaCondensed-Light-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 300;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-MediumItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-MediumItalic-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	}
+
+.CanelaCondensed-MediumItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 500;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-Medium-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	}
+
+.CanelaCondensed-Medium-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 500;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-Thin-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-Thin-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	}
+
+.CanelaCondensed-Thin-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 100;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-Regular-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	}
+
+.CanelaCondensed-Regular-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 400;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-ThinItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-ThinItalic-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	}
+
+.CanelaCondensed-ThinItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 100;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-Bold-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-Bold-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	}
+
+.CanelaCondensed-Bold-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 700;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-LightItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-LightItalic-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	}
+
+.CanelaCondensed-LightItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 300;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-BlackItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-BlackItalic-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	}
+
+.CanelaCondensed-BlackItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 900;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Condensed Web';
+	src: url('CanelaCondensed-RegularItalic-Web.woff2') format('woff2'),
+		 url('CanelaCondensed-RegularItalic-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+.CanelaCondensed-RegularItalic-Web {
+	font-family: 'Canela Condensed Web';
+	font-weight: 400;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-Light-Web.woff2') format('woff2'),
+		 url('CanelaDeck-Light-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	}
+
+.CanelaDeck-Light-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 300;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-Black-Web.woff2') format('woff2'),
+		 url('CanelaDeck-Black-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	}
+
+.CanelaDeck-Black-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 900;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-Regular-Web.woff2') format('woff2'),
+		 url('CanelaDeck-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	}
+
+.CanelaDeck-Regular-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 400;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-Thin-Web.woff2') format('woff2'),
+		 url('CanelaDeck-Thin-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	}
+
+.CanelaDeck-Thin-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 100;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-BlackItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-BlackItalic-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	}
+
+.CanelaDeck-BlackItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 900;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-BoldItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-BoldItalic-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	}
+
+.CanelaDeck-BoldItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 700;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-Bold-Web.woff2') format('woff2'),
+		 url('CanelaDeck-Bold-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	}
+
+.CanelaDeck-Bold-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 700;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-Medium-Web.woff2') format('woff2'),
+		 url('CanelaDeck-Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	}
+
+.CanelaDeck-Medium-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 500;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-MediumItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-MediumItalic-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	}
+
+.CanelaDeck-MediumItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 500;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-ThinItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-ThinItalic-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	}
+
+.CanelaDeck-ThinItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 100;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-LightItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-LightItalic-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	}
+
+.CanelaDeck-LightItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 300;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Deck Web';
+	src: url('CanelaDeck-RegularItalic-Web.woff2') format('woff2'),
+		 url('CanelaDeck-RegularItalic-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+.CanelaDeck-RegularItalic-Web {
+	font-family: 'Canela Deck Web';
+	font-weight: 400;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-BlackItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-BlackItalic-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+	}
+
+.CanelaText-BlackItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 900;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-Bold-Web.woff2') format('woff2'),
+		 url('CanelaText-Bold-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	}
+
+.CanelaText-Bold-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 700;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-Regular-Web.woff2') format('woff2'),
+		 url('CanelaText-Regular-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	}
+
+.CanelaText-Regular-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 400;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-Light-Web.woff2') format('woff2'),
+		 url('CanelaText-Light-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	}
+
+.CanelaText-Light-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 300;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-RegularNo2-Web.woff2') format('woff2'),
+		 url('CanelaText-RegularNo2-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	}
+
+.CanelaText-RegularNo2-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 500;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-RegularItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-RegularItalic-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	}
+
+.CanelaText-RegularItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 400;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-Thin-Web.woff2') format('woff2'),
+		 url('CanelaText-Thin-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	}
+
+.CanelaText-Thin-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 100;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-Medium-Web.woff2') format('woff2'),
+		 url('CanelaText-Medium-Web.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	}
+
+.CanelaText-Medium-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 600;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-LightItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-LightItalic-Web.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	}
+
+.CanelaText-LightItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 300;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-Black-Web.woff2') format('woff2'),
+		 url('CanelaText-Black-Web.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	}
+
+.CanelaText-Black-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 900;
+	font-style: normal;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-RegularNo2Italic-Web.woff2') format('woff2'),
+		 url('CanelaText-RegularNo2Italic-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	}
+
+.CanelaText-RegularNo2Italic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 500;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-BoldItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-BoldItalic-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	}
+
+.CanelaText-BoldItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 700;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-ThinItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-ThinItalic-Web.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	}
+
+.CanelaText-ThinItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 100;
+	font-style: italic;
+	}
+@font-face {
+	font-family: 'Canela Text Web';
+	src: url('CanelaText-MediumItalic-Web.woff2') format('woff2'),
+		 url('CanelaText-MediumItalic-Web.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+	}
+
+.CanelaText-MediumItalic-Web {
+	font-family: 'Canela Text Web';
+	font-weight: 600;
+	font-style: italic;
+	}
