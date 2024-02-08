@@ -1,3 +1,12 @@
+//Redirect proxies for oDoo
+if (window.location.hostname == "herdspace.com"){
+  window.location.replace("https://www.herdspace.com");
+}
+if (window.location.hostname == "joincfd.com"){
+  window.location.replace("https://www.joincfd.com");
+}
+
+
 fetch("/routers/api/getAdvisorList")
   .then((response) => response.json())
   .then((data) => {
@@ -16,4 +25,4 @@ fetch("/routers/api/getAdvisorList")
       // Append the card as a child with the employee data to the <body> element on our page
       document.body.appendChild(card);
     });
-  }); // v1.0.2
+  }); // v1.0.4
