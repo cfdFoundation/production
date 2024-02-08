@@ -1,5 +1,4 @@
 //Redirect proxies for oDoo
-alert(window.location.hostname);
 if (window.location.hostname == "herdspace.com"){
   window.location.replace("https://www.herdspace.com");
 }
