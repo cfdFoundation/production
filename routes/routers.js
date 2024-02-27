@@ -14,6 +14,10 @@ const gracefulShutdown = () => {
 	fAPI.teardown()
 		.catch(() => {})
 		.then(() => process.exit());
+
+	fFramework.teardown()
+		.catch(() => {})
+		.then(() => process.exit());
 };
 
 process.on('SIGINT', gracefulShutdown);

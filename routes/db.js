@@ -34,7 +34,7 @@ async function teardown() {
 	return
 }
 
-async function queryReturn(query,cacheKey) {
+async function queryReturn(query,cacheKey,expireKey = 3600) {
 
     try {
         const cacheResults = await redisClient.get(cacheKey);
@@ -56,7 +56,8 @@ async function queryReturn(query,cacheKey) {
 
             results = dbResults;
 
-            await redisClient.set(cacheKey, JSON.stringify(results));
+            //Set Query results in Redis Cache
+            redisClient.set(cacheKey, JSON.stringify(results), parseInt((+new Date)/1000) + expireKey);
 
         }
     } catch (error) {

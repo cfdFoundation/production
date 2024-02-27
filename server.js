@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get('/routers/:router/:method', routers);
+app.post('/routers/:router/:method', routers);
 
 (async () => {
   app.listen(port, () => {
