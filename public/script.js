@@ -1,10 +1,24 @@
 //Redirect proxies for oDoo
-if (window.location.hostname == "herdspace.com"){
-  window.location.replace("https://www.herdspace.com");
-}
-if (window.location.hostname == "joincfd.com"){
-  window.location.replace("https://www.joincfd.com");
-}
+const payload = { entryURL: window.location.hostname };
+fetch("/routers/framework/redirectURL", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(payload)
+})
+  .then((response) => response.json())
+  .then((data) => {
+  console.log(data);
+    if (data.length > 0){
+      data.forEach((rURL) => {
+          //If we have a destinationURL, redirect to it
+          if (rURL.destinationurl != ""){
+            window.location.replace(rURL.destinationurl);
+          } 
+        });
+    }
+  });
 
 
 fetch("/routers/api/getAdvisorList")
@@ -25,4 +39,6 @@ fetch("/routers/api/getAdvisorList")
       // Append the card as a child with the employee data to the <body> element on our page
       document.body.appendChild(card);
     });
-  }); // v1.0.4
+  }); 
+  
+  // v1.0.5
