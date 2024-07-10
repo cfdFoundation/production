@@ -20,6 +20,7 @@ async function setCacheTimeout(req, data) {
 	return results;
 }
 
+//main redirect listener
 async function redirectURL(req, data) {
 	const queryR = "SELECT * FROM framework_redirectURL where entryURL = '"+data.entryURL+"'";
 	const cacheKey = "CacheKey_" + data.entryURL;
