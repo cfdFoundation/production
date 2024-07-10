@@ -20,6 +20,7 @@ const gracefulShutdown = () => {
 		.then(() => process.exit());
 };
 
+//shutdown services
 process.on('SIGINT', gracefulShutdown);
 process.on('SIGTERM', gracefulShutdown);
 process.on('SIGUSR2', gracefulShutdown); // Sent by nodemon
@@ -44,7 +45,7 @@ module.exports = async (req, res) => {
 	
 	//****************************
 	// Route Object Bindings
-	//****************************
+	//*******************************
 	
 	//api Route Binding
 	if (routerR == "api"){
