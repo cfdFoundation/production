@@ -10,6 +10,7 @@ async function teardown() {
 	return
 }
 
+//public api call, we need key system
 async function getAdvisorList(req, data) {
 	const queryR = "SELECT * FROM advisors";
 	console.log(`Executing PG query :: ${queryR}`);
