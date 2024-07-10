@@ -34,6 +34,7 @@ async function teardown() {
 	return
 }
 
+//query cleanup and cache store
 async function queryReturn(query,cacheKey,expireKey = 3600) {
 
     try {
