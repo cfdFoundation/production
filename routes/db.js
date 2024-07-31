@@ -65,13 +65,25 @@ async function queryReturn(query,cacheKey,expireKey = 3600) {
         results = `{"error":"We're sorry, the service encountered an error."}`;
     }
 
-    
-
     return results;
+}
+
+async function queryExecute(query){
+
+    dbClient.query(query, (err, res) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log('Data execute successful');
+    });
+    
+    return;
 }
 
 module.exports = {
 	init,
     teardown,
     queryReturn,
+    queryExecute,
 };
