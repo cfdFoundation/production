@@ -56,6 +56,12 @@ async function teardown() {
 	return
 }
 
+function sleep(ms) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+  }
+
 async function testRecordPull(){
 
     var params = [];
@@ -117,7 +123,7 @@ async function pushFileToODoo(filename,fileURL,utilObj,oDooID){
 async function pushCognitoData(inData,utilObj){
 
     //use test data
-    //inData = await testData.getData();
+    inData = await testData.getData();
 
     if (inData.Partnerid == undefined){
         return; 
@@ -296,11 +302,84 @@ async function pushCognitoData(inData,utilObj){
             
 }
 
+async function getCommitteeMessages(userID,utilObj){
+
+    var params = [];
+    var returnData;
+    var messageIDS;
+
+    await oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'mail.message',
+        'search',
+        [[['res_id', '=', userID]]]], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo Client mail.message Query Recs Return: ' + JSON.stringify(data));  
+
+            messageIDS = data;
+    });
+
+    await sleep(1000);
+
+    console.log('MessageIDS: ' + JSON.stringify(messageIDS));  
+
+    params.push(messageIDS);
+    params.push(['message_type', 'body', 'date', 'author_id', 'subtype_id', 'reply_to']); //fields
+
+    await oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'mail.message',
+        'read',
+        params], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo Client mail.message Query Results Return: ' + JSON.stringify(data));
+
+            returnData = data;
+
+    }); 
+
+    await sleep(1500);
+
+    console.log(returnData);
+
+    return returnData;
+
+}
+
+async function pushCommitteeMessage(userID,targetID,message){
+    
+    newRecordObj = {};
+
+    newRecordObj.message_type = 'comment';
+    newRecordObj.res_id = targetID;
+    newRecordObj.author_id = userID;
+    newRecordObj.subtype_id = 2;
+    newRecordObj.body = message;
+    newRecordObj.model = 'crm.lead';
+    newRecordObj.reply_to = '"CFD Companies Joincfd.com" <info@cfd-investments.odoo.com>';
+
+    newRecord = [];
+    newRecord[0] = newRecordObj;
+
+    console.log(JSON.stringify(newRecord));
+
+    //Push to mail.message in oDoo
+    oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'mail.message',
+        'create',
+        newRecord], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo mail.message write Return: ' + JSON.stringify(data));
+    });
+
+    return;
+}
 
 
 module.exports = {
 	init,
     teardown,
+    sleep,
     pushFileToODoo,
     pushCognitoData,
+    getCommitteeMessages,
+    pushCommitteeMessage,
 };

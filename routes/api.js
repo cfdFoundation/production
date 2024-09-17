@@ -34,9 +34,31 @@ async function cognitoPush(req,data){
 	return returnObj;
 }
 
+async function getCommitteeMessages(req,data){
+	utilObj.logEvent('getCommitteeMessages',JSON.stringify(data));
+	userID = data.userid;
+	//userID = 18; //debug
+	const results = await oDooObj.getCommitteeMessages(userID,utilObj);
+	return results;
+}
+
+async function pushCommitteeMessage(req,data){
+	utilObj.logEvent('pushCommitteeMessage',JSON.stringify(data));
+
+	userID = data.userid;
+	targetID = data.targetid;
+	message = data.message;
+	
+	oDooObj.pushCommitteeMessage(userID,targetID,message);
+
+	return;
+}
+
 module.exports = {
 	init,
     teardown,
     getAdvisorList,
 	cognitoPush,
+	getCommitteeMessages,
+	pushCommitteeMessage,
 };
