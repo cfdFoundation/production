@@ -5,7 +5,8 @@ const cors = require("cors");
 
 const routers = require('./routes/routers');
 
-const allowedOrigins = ['www.joincfd.com', 'www.cfdcompanies.com', 'www.cfdinvestments.com', 'localhost', 'www.cfd-companies.com', 'www.cognitoforms.com'];
+const allowedOrigins = ['www.joincfd.com', 'www.cfdcompanies.com', 'www.cfdinvestments.com', 'localhost', 'localhost:8080', 
+  'www.cfd-companies.com', 'www.cognitoforms.com', 'staging.joincfd.com', 'staging.cfdcomanies.com'];
 app.use(cors({
   origin: function(origin, callback){
     if (!origin) {

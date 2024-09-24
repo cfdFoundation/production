@@ -302,6 +302,89 @@ async function pushCognitoData(inData,utilObj){
             
 }
 
+async function getCommitteeProfile(userID,utilObj){
+    var params = [];
+    var returnData;
+    var usersID;
+
+    await oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'res.users',
+        'search',
+        [[['partner_id.id', '=', userID]]]], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo Client res.user Query Recs Return: ' + JSON.stringify(data));  
+
+            usersID = data;
+    });
+
+    await sleep(700);
+
+    console.log('getCommitteeProfile UsersID: ' + JSON.stringify(usersID));  
+
+    params.push(usersID);
+    params.push(['name', 'id', 'opportunity_ids', 'x_studio_type', 'x_studio_motivated', 'x_studio_motivated_comments'
+        , 'x_studio_prpdq_form', 'x_studio_drivers_license', 'x_studio_irs_1099', 'x_studio_document_u4_link', 'x_studio_documents_background_link'
+    ]); //fields
+
+    await oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'res.users',
+        'read',
+        params], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo Client res.user Query Results Return: ' + JSON.stringify(data));
+
+            returnData = data;
+
+    }); 
+
+    await sleep(1000);
+
+    console.log(returnData);
+
+    return returnData;
+
+}
+
+async function getCommitteeProspects(utilObj){
+    var params = [];
+    var returnData;
+    var leadIDS;
+
+    await oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'crm.lead',
+        'search',
+        [[['stage_id', 'in', [4, 7, 8, 9, 10]]]]], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo Client crm.lead Query Recs Return: ' + JSON.stringify(data));  
+
+            leadIDS = data;
+    });
+
+    await sleep(1000);
+
+    console.log('leadIDS: ' + JSON.stringify(leadIDS));  
+
+    params.push(leadIDS);
+    params.push(['name', 'contact_name', 'create_date', 'stage_id']); //fields
+
+    await oDooClient.methodCall('execute_kw', [oDooDB,oDooUUID,oDooPass,
+        'crm.lead',
+        'read',
+        params], (error, data) => {
+            if (error) { console.log('oDoo Client Error: ' + JSON.stringify(error)); }
+            console.log('oDoo Client crm.lead Query Results Return: ' + JSON.stringify(data));
+
+            returnData = data;
+
+    }); 
+
+    await sleep(1500);
+
+    console.log(returnData);
+
+    return returnData;
+}
+
 async function getCommitteeMessages(userID,utilObj){
 
     var params = [];
@@ -380,6 +463,8 @@ module.exports = {
     sleep,
     pushFileToODoo,
     pushCognitoData,
+    getCommitteeProspects,
+    getCommitteeProfile,
     getCommitteeMessages,
     pushCommitteeMessage,
 };
