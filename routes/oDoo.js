@@ -126,7 +126,8 @@ async function pushCognitoData(inData,utilObj){
     //inData = await testData.getData(); We are live now
 
     if (inData.Partnerid == undefined){
-        return; 
+        oDooContactId = 1906
+        //return; 
     }
 
     oDooContactId = Number(inData.Partnerid.toString().replace(" ", ""));

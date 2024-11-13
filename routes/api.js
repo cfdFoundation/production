@@ -28,7 +28,7 @@ async function getAdvisorList(req, data) {
 }
 
 async function cognitoPush(req,data){
-	utilObj.logEvent('cognitoPush',JSON.stringify(data));
+	//utilObj.logEvent('cognitoPush',JSON.stringify(data)); Data is not always stable enough to not be filtered
 	oDooObj.pushCognitoData(data,utilObj);
 	returnObj = [{'message': 'Data Recieved.'}];
 	return returnObj;
