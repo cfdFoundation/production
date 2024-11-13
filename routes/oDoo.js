@@ -274,9 +274,9 @@ async function pushCognitoData(inData,utilObj){
         //pushFileToODoo(filename,file_dl,utilObj,oDooContactId);
     }
     if (c_irs_file.length > 0){
-        filename = '_irs_'+oDooContactId+'.png';
-        cdnObj.pushFileURL('OnBoarding',filename,c_irs_file,'image/png');
-        file_irs = 'https://cdn-foundation.nyc3.cdn.digitaloceanspaces.com/OnBoarding/'+'_irs_'+oDooContactId+'.png';
+        filename = '_irs_'+oDooContactId+'.pdf';
+        cdnObj.pushFileURL('OnBoarding',filename,c_irs_file,'application/pdf');
+        file_irs = 'https://cdn-foundation.nyc3.cdn.digitaloceanspaces.com/OnBoarding/'+'_irs_'+oDooContactId+'.pdf';
 
         newRecordObj.x_studio_irs_1099 = file_irs;
 
