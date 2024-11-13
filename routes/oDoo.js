@@ -123,7 +123,7 @@ async function pushFileToODoo(filename,fileURL,utilObj,oDooID){
 async function pushCognitoData(inData,utilObj){
 
     //use test data
-    inData = await testData.getData();
+    //inData = await testData.getData(); We are live now
 
     if (inData.Partnerid == undefined){
         return; 
