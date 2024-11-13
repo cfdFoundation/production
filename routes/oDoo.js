@@ -128,9 +128,11 @@ async function pushCognitoData(inData,utilObj){
     if (inData.Partnerid == undefined){
         oDooContactId = 1906
         //return; 
+    } else {
+        oDooContactId = Number(inData.Partnerid.toString().replace(" ", ""));
     }
 
-    oDooContactId = Number(inData.Partnerid.toString().replace(" ", ""));
+    
     console.log('Partner_id: ' + oDooContactId);
 
     var params = [];
