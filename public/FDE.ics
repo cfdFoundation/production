@@ -1,0 +1,123 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Haiti Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Jamie Barber";RSVP=TRUE:mailto:jamie.barber@cfdinvestments.com
+ATTENDEE;CN="Gerry Good";ROLE=OPT-PARTICIPANT;RSVP=TRUE:mailto:gerry.good@c
+	fdinvestments.com
+CLASS:PUBLIC
+CREATED:20250728T184730Z
+DESCRIPTION:Jamie Barber is inviting you to a scheduled Zoom meeting.\nJoin
+	 Zoom Meeting\nhttps://us02web.zoom.us/j/84393840574\n\nMeeting ID: 843 93
+	84 0574\n\n---\n\nOne tap mobile\n+14702509358\,\,84393840574# US (Atlanta
+	)\n+16465189805\,\,84393840574# US (New York)\n\n---\n\nDial by your locat
+	ion\n• +1 470 250 9358 US (Atlanta)\n• +1 646 518 9805 US (New York)\n
+	• +1 651 372 8299 US (Minnesota)\n• +1 786 635 1003 US (Miami)\n• +1
+	 267 831 0333 US (Philadelphia)\n• +1 312 626 6799 US (Chicago)\n• +1 
+	346 248 7799 US (Houston)\n• +1 602 753 0140 US (Phoenix)\n• +1 669 21
+	9 2599 US (San Jose)\n• +1 720 928 9299 US (Denver)\n• +1 206 337 9723
+	 US (Seattle)\n• +1 213 338 8477 US (Los Angeles)\n\nMeeting ID: 843 938
+	4 0574\n\nFind your local number: https://us02web.zoom.us/u/kde5iGgULu\nMi
+	crosoft Teams\n\nNeed help? https://aka.ms/JoinTeamsMeeting?omkt=en-US\n\n
+	Join the meeting now: https://teams.microsoft.com/l/meetup-join/19%3ameeti
+	ng_NjMzN2YxNjItYWViOS00ODczLTkwZGItZGI5MDdiOWUyODdl%40thread.v2/0?context=
+	%7b%22Tid%22%3a%22ac9fe48f-9423-4652-9090-694deff5718f%22%2c%22Oid%22%3a%2
+	2bffda125-2831-4182-b6c9-a2b4a3938a27%22%7d\n\nMeeting ID: 262 654 988 082
+	 7\nPasscode: nd7Qa6SC\n\n\n\n\n\nFor organizers:\n\nMeeting options: http
+	s://teams.microsoft.com/meetingOptions/?organizerId=bffda125-2831-4182-b6c
+	9-a2b4a3938a27&tenantId=ac9fe48f-9423-4652-9090-694deff5718f&threadId=19_m
+	eeting_NjMzN2YxNjItYWViOS00ODczLTkwZGItZGI5MDdiOWUyODdl@thread.v2&messageI
+	d=0&language=en-US\n\n\n\n\nAdvisory Services are offered through Creative
+	 Financial Designs\, Inc.\, a Registered Investment Adviser\, and Securiti
+	es are offered through cfd Investments\, Inc.\, a Registered Broker/Dealer
+	\, Member FINRA & SIPC\, 2704 S. Goyer Rd.\, Kokomo\, IN 46902. 765-453-96
+	00. This email message may contain confidential information\, and is inten
+	ded only for the use of the persons to whom it was sent. If this message w
+	as received in error\, please destroy the message and let us know about th
+	e error in transmission. The CFD companies cannot accept trade instruction
+	s sent through this email system.\n\n
+DTEND;TZID="Haiti Standard Time":20250924T113000
+DTSTAMP:20250721T195218Z
+DTSTART;TZID="Haiti Standard Time":20250924T083000
+LAST-MODIFIED:20250728T184730Z
+LOCATION:https://us02web.zoom.us/j/84393840574
+ORGANIZER;CN="Jamie Barber":mailto:jamie.barber@cfdinvestments.com
+PRIORITY:5
+SEQUENCE:0
+SUMMARY:Faith Driven Entrepreneur in partnership with CFD Investments Inc.
+TRANSP:OPAQUE
+UID:20250721T192405Z-84393840574@fe80:0:0:0:747c:c4ff:feaf:6e50eth0
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion 16.0.18925.20138">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted
+	 from text/plain format -->\n\n<P><A NAME="">Jamie Barber is inviting you 
+	to a scheduled Zoom meeting.<BR>\nJoin Zoom Meeting<BR>\n<A HREF="https://
+	us02web.zoom.us/j/84393840574">https://us02web.zoom.us/j/84393840574</A><B
+	R>\n<BR>\nMeeting ID: 843 9384 0574<BR>\n<BR>\n---<BR>\n<BR>\nOne tap mobi
+	le<BR>\n+14702509358\,\,84393840574# US (Atlanta)<BR>\n+16465189805\,\,843
+	93840574# US (New York)<BR>\n<BR>\n---<BR>\n<BR>\nDial by your location<BR
+	>\n• +1 470 250 9358 US (Atlanta)<BR>\n• +1 646 518 9805 US (New York)
+	<BR>\n• +1 651 372 8299 US (Minnesota)<BR>\n• +1 786 635 1003 US (Miam
+	i)<BR>\n• +1 267 831 0333 US (Philadelphia)<BR>\n• +1 312 626 6799 US 
+	(Chicago)<BR>\n• +1 346 248 7799 US (Houston)<BR>\n• +1 602 753 0140 U
+	S (Phoenix)<BR>\n• +1 669 219 2599 US (San Jose)<BR>\n• +1 720 928 929
+	9 US (Denver)<BR>\n• +1 206 337 9723 US (Seattle)<BR>\n• +1 213 338 84
+	77 US (Los Angeles)<BR>\n<BR>\nMeeting ID: 843 9384 0574<BR>\n<BR>\nFind y
+	our local number: <A HREF="https://us02web.zoom.us/u/kde5iGgULu">https://u
+	s02web.zoom.us/u/kde5iGgULu</A><BR>\nMicrosoft Teams<BR>\n<BR>\nNeed help?
+	 <A HREF="https://aka.ms/JoinTeamsMeeting?omkt=en-US">https://aka.ms/JoinT
+	eamsMeeting?omkt=en-US</A><BR>\n<BR>\nJoin the meeting now: <A HREF="https
+	://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMzN2YxNjItYWViOS00ODcz
+	LTkwZGItZGI5MDdiOWUyODdl%40thread.v2/0?context=%7b%22Tid%22%3a%22ac9fe48f-
+	9423-4652-9090-694deff5718f%22%2c%22Oid%22%3a%22bffda125-2831-4182-b6c9-a2
+	b4a3938a27%22%7d">https://teams.microsoft.com/l/meetup-join/19%3ameeting_N
+	jMzN2YxNjItYWViOS00ODczLTkwZGItZGI5MDdiOWUyODdl%40thread.v2/0?context=%7b%
+	22Tid%22%3a%22ac9fe48f-9423-4652-9090-694deff5718f%22%2c%22Oid%22%3a%22bff
+	da125-2831-4182-b6c9-a2b4a3938a27%22%7d</A><BR>\n<BR>\nMeeting ID: 262 654
+	 988 082 7<BR>\nPasscode: nd7Qa6SC<BR>\n<BR>\n<BR>\n<BR>\n<BR>\n<BR>\nFor 
+	organizers:<BR>\n<BR>\nMeeting options: <A HREF="https://teams.microsoft.c
+	om/meetingOptions/?organizerId=bffda125-2831-4182-b6c9-a2b4a3938a27&tenant
+	Id=ac9fe48f-9423-4652-9090-694deff5718f&threadId=19_meeting_NjMzN2YxNjItYW
+	ViOS00ODczLTkwZGItZGI5MDdiOWUyODdl@thread.v2&messageId=0&language=en-US">h
+	ttps://teams.microsoft.com/meetingOptions/?organizerId=bffda125-2831-4182-
+	b6c9-a2b4a3938a27&tenantId=ac9fe48f-9423-4652-9090-694deff5718f&threadId=1
+	9_meeting_NjMzN2YxNjItYWViOS00ODczLTkwZGItZGI5MDdiOWUyODdl@thread.v2&messa
+	geId=0&language=en-US</A><BR>\n<BR>\n<BR>\n<BR>\n<BR>\nAdvisory Services a
+	re offered through Creative Financial Designs\, Inc.\, a Registered Invest
+	ment Adviser\, and Securities are offered through cfd Investments\, Inc.\,
+	 a Registered Broker/Dealer\, Member FINRA &amp\; SIPC\, 2704 S. Goyer Rd.
+	\, Kokomo\, IN 46902. 765-453-9600. This email message may contain confide
+	ntial information\, and is intended only for the use of the persons to who
+	m it was sent. If this message was received in error\, please destroy the 
+	message and let us know about the error in transmission. The CFD companies
+	 cannot accept trade instructions sent through this email system.<BR>\n</A
+	>\n</P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-APPTLASTSEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
