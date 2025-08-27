@@ -327,7 +327,7 @@ async function getCommitteeProfile(userID,utilObj){
     params.push(usersID);
     params.push(['name', 'id', 'opportunity_ids', 'x_studio_type', 'x_studio_motivated', 'x_studio_motivated_comments'
         , 'x_studio_prpdq_form', 'x_studio_drivers_license', 'x_studio_irs_1099', 'x_studio_document_u4_link', 'x_studio_documents_background_link'
-        ,'x_studio_gross_compensatio','x_studio_busmixcom_altsused'
+        ,'x_studio_gross_compensation','x_studio_busmixcom_altsused'
         ,'x_studio_busmixcom_alternatives','x_studio_busmixcom_directmutualfunds','x_studio_busmixcom_variableannuitiesvul','x_studio_busmixcom_eiafia'
         ,'x_studio_busmixcom_brokerageaccounts','x_studio_busmixcom_dirbusaccounts','x_studio_busmixfee_tpamsused','x_studio_busmixfee_tpam'
         ,'x_studio_busmiximofmo_list','x_studio_busmixfee_advisermanaged','x_studio_busmixfee_planning','x_studio_busmixfee_feebasedaccounts'
