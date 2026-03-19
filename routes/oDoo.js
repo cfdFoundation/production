@@ -464,14 +464,94 @@ async function pushCommitteeMessage(userID,targetID,message){
 }
 
 
+
+async function pushU4ToDO(partnerID,utilObj){
+	utilObj.logEvent('pushU4ToDO','partnerID:'+partnerID);
+
+	var partnerData;
+	await oDooClient.methodCall('execute_kw',[oDooDB,oDooUUID,oDooPass,
+		'res.partner','read',[[partnerID],['x_studio_document_u4','name']]],(e,d)=>{
+		if(e){console.log('pushU4ToDO partner read error:'+JSON.stringify(e));}
+		partnerData = d;
+	});
+	await sleep(700);
+
+	if(!partnerData||!partnerData[0]||!partnerData[0].x_studio_document_u4){
+		console.log('pushU4ToDO: No U4 attachment found for partner '+partnerID);
+		return [{'message':'No U4 attachment found'}];
+	}
+
+	const b64data = partnerData[0].x_studio_document_u4;
+	const partnerName = partnerData[0].name;
+	const shortName = partnerName.replace(/[\s]+/g,'').substring(0,6);
+	const filename = 'U4_Snapshot__'+shortName+'.pdf';
+	console.log('pushU4ToDO: pushing '+filename+' for '+partnerName);
+
+	const fileBuffer = Buffer.from(b64data,'base64');
+	await cdnObj.writeFile(filename,fileBuffer,'OnBoarding','application/pdf');
+	const cdnUrl = 'https://cdn-foundation.nyc3.cdn.digitaloceanspaces.com/OnBoarding/'+filename;
+	console.log('pushU4ToDO: CDN URL='+cdnUrl);
+
+	await oDooClient.methodCall('execute_kw',[oDooDB,oDooUUID,oDooPass,
+		'res.partner','write',[[partnerID],{x_studio_document_u4_link:cdnUrl}]],(e,d)=>{
+		if(e){console.log('pushU4ToDO write error:'+JSON.stringify(e));}
+		console.log('pushU4ToDO write result:'+JSON.stringify(d));
+	});
+	await sleep(500);
+
+	return [{'message':'U4 pushed to CDN','url':cdnUrl}];
+}
+
+async function pushBackgroundToDO(partnerID,utilObj){
+	utilObj.logEvent('pushBackgroundToDO','partnerID:'+partnerID);
+
+	var partnerData;
+	await oDooClient.methodCall('execute_kw',[oDooDB,oDooUUID,oDooPass,
+			'res.partner','read',[[partnerID],['x_studio_documents_background','name']]],
+			(e,d)=>{
+				if(e){console.log('pushBackgroundToDO partner read error:'+JSON.stringify(e));}
+				partnerData = d;
+			});
+	await sleep(2000);
+
+	if(!partnerData||!partnerData[0]||!partnerData[0].x_studio_documents_background){
+		console.log('pushBackgroundToDO: No background attachment found for partner '+partnerID);
+		return [{'message':'No background attachment found'}];
+	}
+
+	const b64data = partnerData[0].x_studio_documents_background;
+	const partnerName = partnerData[0].name;
+	const shortName = partnerName.replace(/[\s]+/g,'').substring(0,6);
+	const filename = 'Criminal_and_Credit_'+shortName+'.pdf';
+	console.log('pushBackgroundToDO: pushing '+filename+' for '+partnerName);
+
+	const fileBuffer = Buffer.from(b64data,'base64');
+	await cdnObj.writeFile(filename,fileBuffer,'OnBoarding','application/pdf');
+	const cdnUrl = 'https://cdn-foundation.nyc3.cdn.digitaloceanspaces.com/OnBoarding/'+filename;
+	console.log('pushBackgroundToDO: CDN URL='+cdnUrl);
+
+	await oDooClient.methodCall('execute_kw',[oDooDB,oDooUUID,oDooPass,
+			'res.partner','write',[[partnerID],{x_studio_documents_background_link:cdnUrl}]],
+			(e,d)=>{
+				if(e){console.log('pushBackgroundToDO write error:'+JSON.stringify(e));}
+				console.log('pushBackgroundToDO write result:'+JSON.stringify(d));
+			});
+	await sleep(500);
+
+	return [{'message':'Background pushed to CDN','url':cdnUrl}];
+}
+
+
 module.exports = {
-	init,
-    teardown,
-    sleep,
-    pushFileToODoo,
-    pushCognitoData,
-    getCommitteeProspects,
-    getCommitteeProfile,
-    getCommitteeMessages,
-    pushCommitteeMessage,
+init,
+teardown,
+sleep,
+pushFileToODoo,
+pushCognitoData,
+getCommitteeProspects,
+getCommitteeProfile,
+getCommitteeMessages,
+pushCommitteeMessage,
+pushU4ToDO,
+pushBackgroundToDO,
 };

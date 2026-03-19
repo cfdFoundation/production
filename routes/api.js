@@ -70,6 +70,21 @@ async function pushCommitteeMessage(req,data){
 	return;
 }
 
+
+async function pushU4Back(req,data){
+	utilObj.logEvent('pushU4Back',JSON.stringify(data));
+	partnerID = data.id;
+	const results = await oDooObj.pushU4ToDO(partnerID,utilObj);
+	return results;
+}
+
+async function pushBackgroundBack(req,data){
+	utilObj.logEvent('pushBackgroundBack',JSON.stringify(data));
+	partnerID = data.id;
+	const results = await oDooObj.pushBackgroundToDO(partnerID,utilObj);
+	return results;
+}
+
 module.exports = {
 	init,
     teardown,
@@ -79,4 +94,6 @@ module.exports = {
 	getCommitteeProfile,
 	getCommitteeMessages,
 	pushCommitteeMessage,
+	pushU4Back,
+	pushBackgroundBack,
 };

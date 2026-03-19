@@ -88,6 +88,7 @@ async function pushFileURL(foldername, filename, urlname, filetype) {
 }
 
 module.exports = {
+	writeFile,
 	init,
     teardown,
     pushFileURL,
